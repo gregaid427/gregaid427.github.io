@@ -1,0 +1,492 @@
+/* Genral Styles */
+html{
+    margin: 0;
+}
+
+@font-face{
+    font-family:FontAwesome;
+    font-display: swap;
+    src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0);
+}
+
+body{
+    margin: 0;
+    background: #f1f6f5;
+    color: #202020;
+    font-family: 'Roboto Slab', serif;
+    transition:all 0.8s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+button{
+    cursor: pointer;
+}
+/* Navigation Styles */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 1em;
+}
+nav a {
+    text-decoration: none;
+    font-size: 120%;
+    font-family: 'Roboto', sans-serif;
+    padding: 0em 0.5em;
+    color: #202020;
+    text-transform: uppercase;
+}
+.avatar{
+    width: 20%;
+}
+
+.avatar img{
+    max-width: 100%;
+}
+/* Introduction Styles */
+.intro{
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1.5em 0em 2em 0em;
+    text-align: center; 
+}
+
+.intro h1{
+    font-size: 400%;
+    font-family: 'Sacramento', cursive;
+    margin: 0;
+}
+
+.intro p{
+    font-size: 130%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.introImage{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
+.introImage img{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
+/* About Styles */
+#second{
+    background: #eeaba0;
+    padding: 3em 0em;
+}
+
+.hide{
+    display: none;
+}
+
+
+.avatarSec, .skillImg{
+    width: 30%;
+    margin: 0 auto;
+}
+.avatarSec img, .skillImg img{
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+
+.secIntro,.skillText{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center; 
+}
+.reverse {
+    padding: 1.5em 0em 0em 0em;
+}
+ h2{
+    color: #20203c;
+    font-family: 'Roboto', sans-serif;
+}
+
+h3, .h3class{
+    font-size: 150%;
+    font-family: 'Roboto', sans-serif;
+    color: #3c2020;
+}
+
+.middleh2{
+    text-align: center;
+    font-size: 250%;
+    padding: 0.5em 0em;
+}
+
+#second p{
+    font-size: 120%;
+    line-height: 1.6;
+}
+
+.email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    font-size: 130%;
+    margin: 2em auto 0em auto;
+    padding: 0.6em 0.4em;
+    text-decoration: none;
+    background: #f9fcfe;
+    color: #0a0a0a;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.email span {
+    padding: 0em 0.4em;
+}
+
+
+/* Project Styles */
+#projects {
+    background: #f9fcfe;
+    padding: 3em 0em;
+}
+#projects .email {
+    background: #f1f6f5;
+}
+#projects p {
+    font-size: 120%;
+    line-height: 1.6;
+}
+.projAbout p {
+    font-size: 90% !important;
+}
+.projIntro {
+    margin: 1em auto 3em auto;
+}
+.proj {
+    padding: 3em 0em;
+}
+.projButtons a .fa {
+    padding: 0em 0.3em;
+}
+.projButtons a {
+    width: 45%;
+    border: 0;
+    margin: 0.7em 0em;
+    font-size: 130%;
+    padding: 0.4em 0em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+/* .proj:nth-child(2) {
+    background: #b1bcff;
+}
+.proj:nth-child(3) {
+    background: #72a4a7;
+} */
+/* third project from below */
+.proj:nth-last-child(5) {
+    background: #f1ece4;
+}
+.proj:nth-last-child(5) .projButtons a{
+    background: #312d28;
+    color: #f9fcfe;
+}
+.proj:nth-last-child(5) .projButtons a:nth-child(2) {
+    color: #312d28;
+    background: #f9fcfe;
+}
+
+/* second project from below */
+.proj:nth-last-child(4) {
+    background: #b8d7d2;
+}
+.proj:nth-last-child(4) .projButtons a{
+    background: #123d3a;
+    color: #f9fcfe;
+}
+.proj:nth-last-child(4) .projButtons a:nth-child(2) {
+    color: #123d3a;
+    background: #f9fcfe;
+}
+
+/* first project from below */
+.proj:nth-last-child(3) {
+    background: #beddfb;
+}
+.proj:nth-last-child(3) .projButtons a{
+    background: #3363bc;
+    color: #f9fcfe;
+}
+.proj:nth-last-child(3) .projButtons a:nth-child(2) {
+    color: #3363bc;
+    background: #f9fcfe;
+}
+
+.projImg {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.projImg img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+.projAbout {
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.projButtons {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.skillText a, .secIntro a{
+    text-decoration: none;
+    color: #20203c;
+    font-weight: 600;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #20203c;
+}
+/* Footer Styles */
+footer {
+    padding: 3em 1em;
+    background: #0a0a0a;
+}
+
+.socialLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.socialLinks a {
+    font-size: 100%;
+    color: #f1f6f5;
+    text-decoration: none;
+    padding: 0.5em 0em 0.5em 1.7em;
+}
+
+
+@media only screen and (min-width: 768px) {
+    /* Navigation styles */
+    .avatar{
+        width: 10%;
+    }
+
+    .avatarSec, .skillImg {
+        width: 16%;
+    }
+    /* About section styles*/
+    .secIntro, .skillText {
+        width: 60%;
+    }
+
+    .email {
+        width: 30%;
+    }
+
+    /* Project Styles */
+    .projImg {
+        width: 70%;
+    }
+    .projAbout , .projButtons{
+        width: 50%;
+    }
+    /* Footer styles */
+    
+}
+
+@media only screen and (min-width: 1024px) {
+    /* Navigation styles */
+    nav a{
+        padding: 0em 1em;
+    }
+    .avatar{
+        width: 8%;
+    }
+    /* Introduction Styles */
+    .intro h1 {
+        font-size: 500%;
+    }
+    .intro p {
+        font-size: 140%;
+}
+.introImage{
+    width: 75%;
+}
+/* About styles */
+.avatarSec, .skillImg {
+    width: 10%;
+}
+.secIntro, .skillText {
+    width: 40%;
+}
+
+.skillImg, .skillText{
+    margin: 0;
+}
+
+.skillText{
+    text-align: left;
+}
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillImg {
+    padding: 0em 0em;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+
+.skills:last-child {
+    display: block;
+}
+.skills:last-child .skillText {
+    text-align: center;
+    margin: 0 auto;
+}
+.email {
+    width: 25%;
+}
+/* Alt skills styles  */
+.alt-skills{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.alt-skills-img-child{
+    width: 30%;
+}
+
+.alt-skills-text-child{
+    width: 70%;
+}
+
+.skillImg img{
+    margin:0 0 0 auto;
+    padding-right: 1.5em;
+}
+
+.reverse .skillImg img{
+    margin:0;
+    padding: 0 0 0 0.8em
+}
+/* Project styles */
+.projImg {
+    width: 60%;
+}
+.projAbout , .projButtons{
+    width: 40%;
+}
+
+/* Footer styles */
+
+}
+
+@media only screen and (min-width: 1440px) {
+    /* Navigation styles */
+nav{
+    width: 65%;
+    margin: 0 auto;
+}
+.avatar{
+    width: 6%;
+}
+nav a{
+    padding: 0em 1.5em;
+}
+
+/* Introduction styles */
+.introImage{
+    width: 50%;
+}
+/* About Styles */
+#second {
+    padding: 3em 10%;
+}
+.avatarSec, .skillImg {
+    width: 8%;
+}
+.secIntro, .skillText {
+    width: 28%;
+}
+.email {
+    width: 20%;
+}
+
+/* All skills styles  */
+.alt-skills{
+    width: 36%;
+    margin: 0 auto;
+}
+
+.alt-skills-img-child{
+    width: 30%;
+}
+
+.alt-skills-text-child{
+    width: 70%;
+}
+
+/* Project Styles */
+section#projects > * {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.projImg {
+    width: 55%;
+}
+.projAbout , .projButtons{
+    width: 35%;
+}
+
+/* Footer styles */
+
+
+}
+
+@media only screen and (min-width: 2560px) {
+    /* Navigation styles */
+    nav{
+        width: 35%;
+    }
+    /* Introduction styles */
+    .introImage{
+        width: 30%;
+    }
+    /* About styles */
+    #second {
+        padding: 3em 20%;
+    }
+    /* Project styles */
+    section#projects > * {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    .projImg {
+        width: 50%;
+    }
+    .projAbout , .projButtons{
+        width: 35%;
+    }
+}
